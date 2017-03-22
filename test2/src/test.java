@@ -2,6 +2,7 @@ public class test {
 
 	/**
 	 * @param args
+	 二分法搜索	
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
