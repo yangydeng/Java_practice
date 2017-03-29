@@ -6,16 +6,16 @@ public class quickSort {
 	 */
 	public static void main(String[] args) {
 		ArrayPar arr = new ArrayPar(10);
-		arr.insert(10);
-		arr.insert(3);
-		arr.insert(13);
-		arr.insert(22);
-		arr.insert(44);
-		arr.insert(1);
+		//{53,4,5,67,80,23,7,12}
+		arr.insert(53);
+		arr.insert(4);
 		arr.insert(5);
+		arr.insert(67);
+		arr.insert(80);
+		arr.insert(23);
+		arr.insert(7);
+		arr.insert(12);
 		arr.display();
-		int pivot = 10;
-		System.out.print("pivot is :"+pivot);
 		int size = arr.size();
 		
 		arr.recQuickSort(0, size-1);
