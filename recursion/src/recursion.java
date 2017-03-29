@@ -6,10 +6,14 @@ public class recursion {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+
+
+		
 		Scanner input = new Scanner(System.in);
 		
-		System.out.println("Enter a number triangel:"+triangel(input.nextInt()));
-		System.out.println("Enter a number factorial:"+factorial(input.nextInt()));
+		System.out.println("triangel:"+triangel(input.nextInt()));
+		System.out.println("factorial:"+factorial(input.nextInt()));
+		
 
 	}
 
