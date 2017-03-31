@@ -9,7 +9,8 @@ public class QS_practice {
 		qs_practic qs = new qs_practic(arr);
 		qs.disp();
 		qs.recQS(0, arr.length-1);
-		//qs.disp();
+		qs.disp();
+		
 
 	}
 
@@ -29,7 +30,7 @@ class qs_practic{
 		int ptrLeft = left-1;
 		int ptrRight = right+1;
 		
-		while (true) {
+		while (true) { // after the break, the array will be divide into two parts, smaller <---> bigger
 			
 			while(ptrLeft<right && array[++ptrLeft]<pivot);  // to find the position of the smaller value;
 			while(ptrRight>left && array[--ptrRight]>pivot); //to find the position of the bigger value;
@@ -58,8 +59,8 @@ class qs_practic{
 		else {
 			int pivot = array[right];
 			int ptr = Pivot(left,right,pivot);
-			System.out.println("index: "+ptr+" pivot:"+pivot);
-			disp();
+			//System.out.println("index: "+ptr+" pivot:"+pivot);
+			//disp();
 			recQS(left, ptr-1);
 			recQS(ptr, right);
 		}
